@@ -5,21 +5,21 @@
 class Writ < Formula
   desc "The agreed scope of a piece of work, approved before any code exists"
   homepage "https://github.com/Laaaaksh/writ"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.0/writ_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f7a55d1f04990e97c4e0a5052e1c4822c3192d3726d26225ea97f93c006f143a"
+      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.1/writ_0.2.1_darwin_amd64.tar.gz"
+      sha256 "c2e5cafd0f8cf1748a1a11ffbd1c293c6c38e4f38ae75922dacbee039a3fdff2"
 
       define_method(:install) do
         bin.install "writ"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.0/writ_0.2.0_darwin_arm64.tar.gz"
-      sha256 "cd2249d594ced73b09c8134dbd79da21a85401a010ce2ff2bbb04645af802395"
+      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.1/writ_0.2.1_darwin_arm64.tar.gz"
+      sha256 "64e489f21bd6f8562b281d5b413caf1f9d64dd7978bd82adc2f99ef25e42c223"
 
       define_method(:install) do
         bin.install "writ"
@@ -29,15 +29,15 @@ class Writ < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.0/writ_0.2.0_linux_amd64.tar.gz"
-      sha256 "8d4d5f0dfdaab0395c0f9946d9a04ada31623717e9145e20176115201953494a"
+      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.1/writ_0.2.1_linux_amd64.tar.gz"
+      sha256 "8270961986f8ea9a2d4cb62328343a544dcd2ca90f422def10c11af0c5fbebf7"
       define_method(:install) do
         bin.install "writ"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.0/writ_0.2.0_linux_arm64.tar.gz"
-      sha256 "789aa1ed4d8c64644fda9c983fe3e3e951a77818e457cfc84cca8e8fe15e3349"
+      url "https://github.com/Laaaaksh/writ/releases/download/v0.2.1/writ_0.2.1_linux_arm64.tar.gz"
+      sha256 "99c720fc82984de9f0e534bcfb6c1686f42a0b6e8ab144a921b5eb2561479808"
       define_method(:install) do
         bin.install "writ"
       end
