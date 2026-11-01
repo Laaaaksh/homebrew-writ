@@ -1,11 +1,11 @@
 # homebrew-writ
 
-Homebrew tap for [writ](https://github.com/Laaaaksh/writ).
+Homebrew tap for [writ](https://github.com/attentionfs/writ).
 
 ```
 brew tap laaaaksh/writ
 brew trust laaaaksh/writ
-brew install Laaaaksh/writ/writ
+brew install attentionfs/writ/writ
 ```
 
 The `brew trust` step is required once: current Homebrew refuses to load formulae from
